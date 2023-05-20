@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <script src="scriptEncriptador.js" type="text/javascript" defer></script>
+    <title>Encriptador</title>
+</head>
+<body>
+   <div class="cover">
+        <header>
+            <div class="marco">
+                <h1>Encriptador</h1>            
+            </div>
+        </header> 
+        <main >
+            <section class="marco-accion">
+                <div class="area-texto">
+                    <form action="">
+                        <textarea name="" id="escribir" cols="30" rows="10" placeholder="Escriba su mensaje secreto en minúsculas y sin acento"></textarea>
+                        <div class="botones">
+                            <input id="botonDeEncriptar" type="button" value="Encriptar" onclick="">
+                            <input id="botonDeDesencriptar" type="button" value="Desencriptar" onclick="">
+                        </div>
+                    </form>        
+                </div>       
+                <div class="texto-cifrado">
+                    <div class="texto-salida">
+                        <h4>Aquí aparece el mensaje encriptado</h4>                   
+                    </div>
+                    <div>
+                        <input id="botonDeCopiar" type="button" value="Copiar" onclick="">
+                    </div>
+                </div>  
+            </section>      
+        </main>   
+   </div>
+</body>
+</html>
