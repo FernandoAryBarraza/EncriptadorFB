@@ -27,6 +27,26 @@ body{
     color: var(--text-100);
 }
 
+.llamar{
+    position: fixed;
+    top: 80%;
+    right: 13rem;
+    background-color: var(--bg-100);
+    border-radius: 50%;
+    border: 3px solid var(--text-200);
+    box-shadow:  5px 5px 5px var(--accent-200);
+}
+
+.logo{
+    max-width: 6.3rem;    
+    position: fixed;
+    border-radius: 50%;
+    top: 1rem;
+    left: 18rem;
+    border: 3px solid var(--primary-200);
+    box-shadow:  5px 5px 5px rgba(111, 218, 23, 0.25);
+}
+
 h1{
     background-color: #ccc;
     background: linear-gradient(90deg,var(--accent-200),var(--primary-200));
@@ -138,6 +158,17 @@ textarea {
     font-size: 1.2em;
 }
 
+.texto-salida > h4{
+    position: relative;
+    top: 3rem;
+}
+
+.img-texto-salida{
+    position: relative;
+    max-width: 10rem;   
+    top: 4rem;
+}
+
 #botonDeCopiar {    
     width: 11rem;
     height: 3.125rem;
@@ -158,6 +189,32 @@ textarea {
 
 }
 
+#modal{    
+    background-color: var(--bg-300);
+    border: 3px solid var(--accent-200);
+    border-radius: 10px;
+}
+
+#github-logo{
+    max-width: 6.5rem;
+}
+
+#linkedin-logo{
+    max-width: 5rem;
+}
+
+#twitter-logo{
+    max-width: 5rem;
+}
+
+#btn-cerrar-modal{
+    display: block;     
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--primary-200);
+}
+
 @media (max-width: 1000px){
     body{
         display: flex;
@@ -165,8 +222,22 @@ textarea {
     }
 
     .marco{
+        position: relative;
+        left: 5rem;        
+        font-size: 2.5em;
         width: 9em;
         margin: auto;
+    }
+
+    .llamar{        
+        top: 80%;
+        right: 2rem;        
+    }
+    
+    .logo{
+        max-width: 3.5rem;            
+        top: 1rem;
+        left: 3rem;        
     }
     .marco-accion{
         width: 87%;
@@ -184,6 +255,10 @@ textarea {
         flex-direction: column;
     }
 
+    .botones{
+        gap: 2em;
+    }
+
     #botonDeEncriptar, #botonDeDesencriptar{
         font-size: 22px;
     }
@@ -196,6 +271,17 @@ textarea {
         width: 27rem;
         height: 15rem;
         font-size: 25px;
+    }
+
+    .texto-salida > h4{
+        position: relative;
+        top: 1rem;
+    }
+    
+    .img-texto-salida{
+        position: relative;
+        max-width: 7rem;   
+        top: 2rem;
     }
     
     

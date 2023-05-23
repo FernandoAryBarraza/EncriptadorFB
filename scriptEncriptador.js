@@ -3,6 +3,9 @@ let botonDeDesencriptar = document.getElementById("botonDeDesencriptar");
 let botonDeCopiar = document.getElementById("botonDeCopiar");
 var texto = document.getElementById("escribir");
 let textoSalida = document.querySelector(".texto-salida");
+const abrirModal = document.getElementById('btn-abrir-modal');
+const cerrarModal = document.getElementById('btn-cerrar-modal');
+const modal = document.getElementById('modal');
 let mensajeEncriptado = "";
 let textoDesencriptado = "";
 
@@ -60,6 +63,14 @@ function desencriptar() {
 
     textoSalida.innerHTML = textoEncriptado;    
 }
+
+abrirModal.addEventListener('click', ()=>{
+    modal.showModal();
+});
+
+cerrarModal.addEventListener('click', ()=>{
+    modal.close();
+})
 
 botonDeEncriptar.onclick = encriptar;
 botonDeCopiar.onclick = copiarTexto;
